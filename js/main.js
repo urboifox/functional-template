@@ -5,8 +5,8 @@
 
 // The End Of The Year Date
 // 1000 milliseconds = 1 Second
-
-let countDownDate = new Date("Dec 31, 2022 23:59:59").getTime();
+let currentYear = new Date().getFullYear();
+let countDownDate = new Date(`Dec 31, ${currentYear} 23:59:59`).getTime();
 // console.log(countDownDate);
 
 let counter = setInterval(() => {
@@ -25,8 +25,10 @@ let counter = setInterval(() => {
 
   document.querySelector(".days").innerHTML = days < 10 ? `0${days}` : days;
   document.querySelector(".hours").innerHTML = hours < 10 ? `0${hours}` : hours;
-  document.querySelector(".minutes").innerHTML = minutes < 10 ? `0${minutes}` : minutes;
-  document.querySelector(".seconds").innerHTML = seconds < 10 ? `0${seconds}` : seconds;
+  document.querySelector(".minutes").innerHTML =
+    minutes < 10 ? `0${minutes}` : minutes;
+  document.querySelector(".seconds").innerHTML =
+    seconds < 10 ? `0${seconds}` : seconds;
 
   if (dateDiff < 0) {
     clearInterval(counter);
@@ -43,8 +45,8 @@ let counter = setInterval(() => {
  ** Video URL: https://youtu.be/PLsUdgLnzgQ
  */
 
-let progressSpans = document.querySelectorAll(".the-progress span");
-let section = document.querySelector(".our-skills");
+let progressSpans = document.querySelectorAll(".progress span");
+let section = document.querySelector(".skills");
 
 let nums = document.querySelectorAll(".stats .number");
 let statsSection = document.querySelector(".stats");
