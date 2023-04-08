@@ -1,4 +1,4 @@
-#  HTML - CSS template 3
+#  template 3
 
 
 ## Table of contents
