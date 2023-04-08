@@ -1,6 +1,5 @@
-# Elzero - HTML - CSS template 3
+#  HTML - CSS template 3
 
-This is a template from [Elzero Web School](https://elzero.org/).
 
 ## Table of contents
 
